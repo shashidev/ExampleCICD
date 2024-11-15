@@ -16,8 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyL-97-qBL">
+                                <rect key="frame" x="16" y="75" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F84-4g-Ruw">
+                                <rect key="frame" x="16" y="125" width="130" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="L71-IN-aF3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CI/CD Pipeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sA6-a5-Nvr">
-                                <rect key="frame" x="142" y="415.66666666666669" width="109" height="21"/>
+                                <rect key="frame" x="156" y="132" width="221" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,14 +39,20 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sA6-a5-Nvr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JKG-RH-81o"/>
-                            <constraint firstItem="sA6-a5-Nvr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJb-b7-Spp"/>
+                            <constraint firstItem="F84-4g-Ruw" firstAttribute="top" secondItem="EyL-97-qBL" secondAttribute="bottom" constant="16" id="1xk-qx-g4w"/>
+                            <constraint firstItem="sA6-a5-Nvr" firstAttribute="leading" secondItem="F84-4g-Ruw" secondAttribute="trailing" constant="10" id="5BN-oM-NK4"/>
+                            <constraint firstItem="F84-4g-Ruw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6a6-M9-gKy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sA6-a5-Nvr" secondAttribute="trailing" constant="16" id="MfC-tR-ath"/>
+                            <constraint firstItem="sA6-a5-Nvr" firstAttribute="centerY" secondItem="F84-4g-Ruw" secondAttribute="centerY" id="fYK-G6-9cs"/>
+                            <constraint firstItem="EyL-97-qBL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="nT1-3I-Lq6"/>
+                            <constraint firstItem="EyL-97-qBL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pXC-eh-ePg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EyL-97-qBL" secondAttribute="trailing" constant="16" id="rZ8-Nk-xVr"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="-27"/>
+            <point key="canvasLocation" x="-69.465648854961827" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
